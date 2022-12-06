@@ -54,7 +54,7 @@ import openfl.display.BlendMode;
 import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
 
-
+#if windows
 import Discord.DiscordClient;
 #end
 import Sys;
