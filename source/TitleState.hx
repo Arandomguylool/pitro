@@ -60,7 +60,7 @@ class TitleState extends MusicBeatState
 
 		#if sys
 		if (!openfl.utils.Assets.exists("/assets/replays"))
-			sys.FileSystem.createDirectory(Asset2File.getPath + "/assets/replays");
+			sys.FileSystem.createDirectory(Asset2File.path + "/assets/replays");
 		#end
 
 		@:privateAccess
