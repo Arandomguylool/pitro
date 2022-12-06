@@ -75,10 +75,10 @@ class Replay
     public function LoadFromJSON()
     {
         #if sys
-        trace('loading ' + Asset2File.getPath() + 'assets/replays/' + path + ' replay...');
+        trace('loading ' + 'assets/replays/' + path + ' replay...');
         try
         {
-            var repl:ReplayJSON = cast Json.parse(File.getContent(Asset2File.getPath() + "assets/replays/" + path));
+            var repl:ReplayJSON = cast Json.parse(openfl.utils.Assets.getText(Asset2File.path + "assets/replays/" + path));
             replay = repl;
         }
         catch(e)
