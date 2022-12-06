@@ -33,7 +33,7 @@ class LoadReplayState extends MusicBeatState
 	{
 		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
         #if sys
-		controlsStrings = sys.FileSystem.readDirectory(Asset2File.getPath + "/assets/replays/");
+		controlsStrings = sys.FileSystem.readDirectory("/assets/replays/");
         #end
 		trace(controlsStrings);
 
