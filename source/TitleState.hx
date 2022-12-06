@@ -57,11 +57,6 @@ class TitleState extends MusicBeatState
 		#if polymod
 		polymod.Polymod.init({modRoot: "mods", dirs: ['introMod']});
 		#end
-		
-		#if sys
-		if (!openfl.utils.Assets.exists("/assets/replays"))
-			sys.FileSystem.createDirectory(Asset2File.getPath() + "/assets/replays");
-		#end
 
 		@:privateAccess
 		{
